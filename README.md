@@ -6,6 +6,23 @@
 
 To start using this software you need to have Ruby installed in your machine
 
+in terminal:
+
+```
+ruby morse_code.rb
+```
+
+You will get ` Enter a message to decode!` anter morse code in the terminal and hit `Enter`
+
+Exemple:
+
+```
+─$ ruby morse_code.rb
+Enter a message to decode!
+.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ... # input
+A BOX FULL OF RUBIES                                                       # output
+```
+
 ## Authors
 
 👤 **Ismail courr**
