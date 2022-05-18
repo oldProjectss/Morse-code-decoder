@@ -1,16 +1,10 @@
-# Vet Clinic Database
+# Morse code decoder
 
-> This Repo is for Database module at microverse it's generated from an other template repo
-
-![](./schema-diagram.png)
+> This is a morse code decoder that uses ruby to convert morse coded into readable text
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+To start using this software you need to have Ruby installed in your machine
 
 ## Authors
 
@@ -19,8 +13,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - GitHub: [@ismailco](https://github.com/ismailco)
 - Twitter: [@ismailcourr](https://twitter.com/ismailcourr)
 - LinkedIn: [ismailcourr](https://linkedin.com/in/ismailcourr)
-
-## Contributors
 
 👤 **Nicholas Mutale**
 
