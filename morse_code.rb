@@ -52,8 +52,6 @@ def decode_char(char)
     'Y'
   elsif char == '--..'
     'Z'
-  # else
-    # 'Invalide morse code'
   end
 end
 
@@ -83,7 +81,7 @@ def decode(word)
   decoded
 end
   
-  # for testing the decode method
-  puts decode('-- -.--   -. .- -- .')
-  puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+# for testing the decode method
+puts decode('-- -.--   -. .- -- .')
+ puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 
