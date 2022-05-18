@@ -13,9 +13,6 @@ def decode_char(char)
   codes[char]
 end
 
-# for testing the decode_char method
-puts(decode_char('.-'))
-
 # decode a word
 def decode_word(word)
   decoded = ''
@@ -24,9 +21,6 @@ def decode_word(word)
   end
   decoded
 end
-
-# for testing the decode_word method
-puts decode_word('-- -.--')
 
 # decode the entire message
 def decode(word)
@@ -37,6 +31,6 @@ def decode(word)
   decoded
 end
 
-# for testing the decode method
-puts decode('-- -.--   -. .- -- .')
-puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+puts "Enter a message to decode!"
+message = gets.chomp
+puts decode(message)
