@@ -31,6 +31,6 @@ def decode(word)
   decoded
 end
 
-puts "Enter a message to decode!"
+puts 'Enter a message to decode!'
 message = gets.chomp
 puts decode(message)
