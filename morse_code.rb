@@ -1,69 +1,69 @@
 # decode one character
 def decode_char(char)
   if char == '.-'
-    "A"
+    'A'
   elsif char == '-...'
-    "B"
+    'B'
   elsif char == '-.-.'
-    "C"
+    'C'
   elsif char == '-..'
-    "D"
+    'D'
   elsif char == '.'
-    "E"
+    'E'
   elsif char == '..-.'
-    "F"
+    'F'
   elsif char == '--.'
-    "G"
+    'G'
   elsif char == '....'
-    "H"
+    'H'
   elsif char == '..'
-    "I"
+    'I'
   elsif char == '.---'
-    "J"
+    'J'
   elsif char == '-.-'
-    "K"
+    'K'
   elsif char == '.-..'
-    "L"
+    'L'
   elsif char == '--'
-    "M"
+    'M'
   elsif char == '-.'
-    "N"
+    'N'
   elsif char == '---'
-    "O"
+    'O'
   elsif char == '.--.'
-    "P"
+    'P'
   elsif char == '--.-'
-    "Q"
+    'Q'
   elsif char == '.-.'
-    "R"
+    'R'
   elsif char == '...'
-    "S"
+    'S'
   elsif char == '-'
-    "T"
+    'T'
   elsif char == '..-'
-    "U"
+    'U'
   elsif char == '...-'
-    "V"
+    'V'
   elsif char == '.--'
-    "W"
+    'W'
   elsif char == '-..-'
-    "X"
+    'X'
   elsif char == '-.--'
-    "Y"
+    'Y'
   elsif char == '--..'
-    "Z"
-  else
-    "Invalide morse code"
+    'Z'
+  # else
+    # 'Invalide morse code'
   end
 end
 
 # for testing the decode_char method
-puts(decode_char(".-"))
+puts(decode_char('.-'))
 
 # decode a word
 def decode_word(word)
-  decoded = ""
-  word.split(' ').each do
+  decoded = ''
+  word.split.each do
     |letter|
     decoded += decode_char(letter)
   end
@@ -71,20 +71,19 @@ def decode_word(word)
 end
 
 # for testing the decode_word method
-puts decode_word("-- -.--")
+puts decode_word('-- -.--')
 
 # decode the entire message
 def decode(word)
-  decoded = ""
-  word.split('   ').each do
+  decoded = ''
+  word.split('  ').each do
     |words|
     decoded += "#{decode_word(words)} "
-
   end
   decoded
 end
   
   # for testing the decode method
-  puts decode("-- -.--   -. .- -- .")
-  puts decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+  puts decode('-- -.--   -. .- -- .')
+  puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 
