@@ -75,15 +75,16 @@ puts decode_word("-- -.--")
 
 # decode the entire message
 def decode(word)
-    decoded = ""
-    word.split('   ').each do
-      |words|
-      decoded += "#{decode_word(words)} "
+  decoded = ""
+  word.split('   ').each do
+    |words|
+    decoded += "#{decode_word(words)} "
 
-    end
-    decoded
   end
+  decoded
+end
   
-  # for testing the decode_word method
+  # for testing the decode method
   puts decode("-- -.--   -. .- -- .")
+  puts decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
 
